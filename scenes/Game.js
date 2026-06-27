@@ -238,6 +238,10 @@ export default class Game extends Phaser.Scene {
                 enemy.disableBody(true, true);
                 this.spawnParticles(enemy.x, enemy.y);
                 player.setVelocityY(-300);
+                // Play the dedicated kill sound effect
+                this.sound.play('kill', {
+                    volume: 0.8
+                });
             } else {
                 if (!player.isInvincible) {
                     this.playerHit();

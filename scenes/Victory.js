@@ -73,7 +73,7 @@ export default class Victory extends Phaser.Scene {
             }
             
             const timeText = isNewBestTime ? 
-                'NEW BEST TIME! ⚡' : 
+                'NEW BEST TIME!' : 
                 'Best Time: ' + displayTime.toFixed(1) + 's';
             
             const timeColor = isNewBestTime ? '#FF6B6B' : '#8DA3BC';
